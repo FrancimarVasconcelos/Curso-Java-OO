@@ -16,11 +16,19 @@ public class funcionarioapp002 {
 
         System.out.print("Nome: ");
         funcinario.name = sc.nextLine();
-        System.out.println("Salario Bruto :");
+        System.out.print("Salario Bruto :");
         funcinario.salarioBruto = sc.nextDouble();
-        System.out.println("Taxa: ");
+        System.out.print("Taxa: ");
         funcinario.taxa = sc.nextDouble();
+        
+        System.out.println(funcinario);
+        System.out.println();
 
+        System.err.println("qual porcentagem para aumentar o salário? ");
+        Double porcentagem = sc.nextDouble();
+        funcinario.porcentagemSalario(porcentagem);
+
+        System.out.print("Atualização de dados: ");
         System.out.println(funcinario);
 
 

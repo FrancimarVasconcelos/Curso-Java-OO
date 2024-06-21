@@ -11,6 +11,11 @@ public class funcionarioExerc002 {
     }
 
     public void porcentagemSalario(double porcentagem){
+            this.salarioBruto += salarioBruto * porcentagem / 100;
+    }
 
+    @Override
+    public String toString() {
+        return "Funcionario: " + name+ "," + " $ " + salarioLiquido();
     }
 }
