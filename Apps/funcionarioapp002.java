@@ -24,7 +24,7 @@ public class funcionarioapp002 {
         System.out.println(funcinario);
         System.out.println();
 
-        System.err.println("qual porcentagem para aumentar o salário? ");
+        System.err.print("qual porcentagem para aumentar o salário? ");
         Double porcentagem = sc.nextDouble();
         funcinario.porcentagemSalario(porcentagem);
 
